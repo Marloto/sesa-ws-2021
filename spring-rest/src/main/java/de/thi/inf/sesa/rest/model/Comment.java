@@ -1,6 +1,7 @@
 package de.thi.inf.sesa.rest.model;
 
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Setter;
 
@@ -11,6 +12,7 @@ import java.util.UUID;
 
 @Entity
 @Data
+@AllArgsConstructor
 public class Comment {
     @Id
     @Setter(AccessLevel.NONE)

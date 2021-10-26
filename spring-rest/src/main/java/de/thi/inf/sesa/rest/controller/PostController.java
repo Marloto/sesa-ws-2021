@@ -45,7 +45,7 @@ public class PostController {
         }
         return repository.save(oldPost.map(p -> {
             p.setContent(post.getContent());
-            p.setContent(post.getTitle());
+            p.setTitle(post.getTitle());
             return p;
         }).get());
     }
