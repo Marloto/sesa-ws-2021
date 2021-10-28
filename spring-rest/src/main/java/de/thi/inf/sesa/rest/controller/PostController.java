@@ -12,6 +12,23 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+
+// HTTP Anfragebestandteile?
+// -> Header und Body (POST / PUT)
+// -> HTTP-Methode im Header
+
+// -> Content-Type, Accept [x]
+// -> Custom-Header-Informationen -> Key: Value [x]
+// -> Pfad [x] + ggf. Query
+
+// Wie kann Bestandteile der Anfrage eine Versionierung der
+// Schnittstelle erreicht werden?
+// -> Strategie 1: Pfad-Prefix ... z.B. /api/v1/posts
+// -> Strategie 2: Custom-Header und da Version
+//                 abbilden, my-fancy-app-version: v1
+// -> Strategie 3: Accept: application/custom.1+json
+// -> Strategie 4: /posts?api=v1
+
 @RestController
 @RequestMapping("/posts")
 public class PostController {
