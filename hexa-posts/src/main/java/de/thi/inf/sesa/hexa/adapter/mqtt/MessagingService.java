@@ -1,4 +1,4 @@
-package de.thi.inf.sesa.hexa.messaging;
+package de.thi.inf.sesa.hexa.adapter.mqtt;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -40,7 +40,8 @@ public class MessagingService {
         }
     }
 
-    public void publish(int qos, String content) {
+    public void publish(int qos, Object object) {
+        String content = asJsonString(object);
         MqttMessage message = new MqttMessage(content.getBytes());
         message.setQos(qos);
         try {
@@ -50,8 +51,8 @@ public class MessagingService {
         }
     }
 
-    public void publish(String content) {
-        this.publish(2, content);
+    public void publish(Object object) {
+        this.publish(2, object);
     }
 
     static String asJsonString(final Object obj) {

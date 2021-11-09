@@ -15,5 +15,5 @@ message PostsStatisticRequest {
 }
 
 message PostsStatisticResponse {
-    int32 count = 1;
+    int64 count = 1;
 }
