@@ -79,6 +79,11 @@
             <version>${grpc.version}</version>
         </dependency>
 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
         <dependency>
             <!-- Java 9+ compatibility - Do NOT update to 2.0.0 -->
             <groupId>jakarta.annotation</groupId>
@@ -168,7 +173,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- <classpathPrefix>lib</classpathPrefix> -->
-                            <mainClass>de.thi.inf.sesa.rest.Application</mainClass>
+                            <mainClass>de.thi.inf.sesa.hexa.Application</mainClass>
                         </manifest>
                         <manifestEntries>
                             <Class-Path>lib/</Class-Path>

@@ -1,6 +1,7 @@
 spring:
   application:
     name: hexa-posts-server
+
 grpc:
   server:
     port: 9898
