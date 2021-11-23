@@ -1,0 +1,30 @@
+#1 [internal] load build definition from Dockerfile
+#1 sha256:803d01d0e2414d52b2c97cfe97514fccec64a6376e3b8f642c7749df319a3a2b
+#1 transferring dockerfile: 37B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:005147e967be3f17a41996e0cb53ae35d7b9c722505094ff8bd9ce5eef8908fb
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/alpine:3.12
+#3 sha256:dcbe6445faecb6a0adf28cc54a74893ed6f37ff445088ba92e20e9178ed92ea3
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/alpine:3.12
+#4 sha256:bc0eb6cbe74f6c349104d22f689b973972c20362f3acba87a270406f51c8478a
+#4 DONE 0.0s
+
+#5 [2/2] RUN echo "Hello, World" > /root/something
+#5 sha256:f4dbdd0ba76795a8421111780b5e0648a60776ffdccac4bf6fa9e646ee51d429
+#5 CACHED
+
+#6 exporting to image
+#6 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#6 exporting layers done
+#6 writing image sha256:0bbf69d0e49efaf69b3b7704bd7d9c49382bf8491d9cf77c4e6436996dec1707 done
+#6 naming to docker.io/library/example done
+#6 DONE 0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them

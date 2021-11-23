@@ -1,5 +1,10 @@
 version: "3.8"
 
 services:
+  # bauen das Dockerfile dass hier neben an liegt
   app:
     build: .
+  stuff:
+    image: marloto/reg-example:v2.0
+  webserver:
+    image: nginx:1.21
