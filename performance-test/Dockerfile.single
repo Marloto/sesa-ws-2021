@@ -1,0 +1,67 @@
+FROM node:16-slim
+
+WORKDIR /app
+COPY package*.json index.js ./
+RUN npm install
+CMD ["node","index.js"]
+
+RUN echo This is the 0 > test0 \
+    && echo This is the 1 > test1 \
+    && echo This is the 2 > test2 \
+    && echo This is the 3 > test3 \
+    && echo This is the 4 > test4 \
+    && echo This is the 5 > test5 \
+    && echo This is the 6 > test6 \
+    && echo This is the 7 > test7 \
+    && echo This is the 8 > test8 \
+    && echo This is the 9 > test9 \
+    && echo This is the 0 > test10 \
+    && echo This is the 1 > test11 \
+    && echo This is the 2 > test12 \
+    && echo This is the 3 > test13 \
+    && echo This is the 4 > test14 \
+    && echo This is the 5 > test15 \
+    && echo This is the 6 > test16 \
+    && echo This is the 7 > test17 \
+    && echo This is the 8 > test18 \
+    && echo This is the 9 > test19 \
+    && echo This is the 0 > test20 \
+    && echo This is the 1 > test21 \
+    && echo This is the 2 > test22 \
+    && echo This is the 3 > test23 \
+    && echo This is the 4 > test24 \
+    && echo This is the 5 > test25 \
+    && echo This is the 6 > test26 \
+    && echo This is the 7 > test27 \
+    && echo This is the 8 > test28 \
+    && echo This is the 9 > test29 \
+    && echo This is the 0 > test30 \
+    && echo This is the 1 > test31 \
+    && echo This is the 2 > test32 \
+    && echo This is the 3 > test33 \
+    && echo This is the 4 > test34 \
+    && echo This is the 5 > test35 \
+    && echo This is the 6 > test36 \
+    && echo This is the 7 > test37 \
+    && echo This is the 8 > test38 \
+    && echo This is the 9 > test39 \
+    && echo This is the 0 > test40 \
+    && echo This is the 1 > test41 \
+    && echo This is the 2 > test42 \
+    && echo This is the 3 > test43 \
+    && echo This is the 4 > test44 \
+    && echo This is the 5 > test45 \
+    && echo This is the 6 > test46 \
+    && echo This is the 7 > test47 \
+    && echo This is the 8 > test48 \
+    && echo This is the 9 > test49 \
+    && echo This is the 0 > test50 \
+    && echo This is the 1 > test51 \
+    && echo This is the 2 > test52 \
+    && echo This is the 3 > test53 \
+    && echo This is the 4 > test54 \
+    && echo This is the 5 > test55 \
+    && echo This is the 6 > test56 \
+    && echo This is the 7 > test57 \
+    && echo This is the 8 > test58 \
+    && echo This is the 9 > test59

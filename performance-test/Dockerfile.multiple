@@ -1,0 +1,67 @@
+FROM node:16-slim
+
+WORKDIR /app
+COPY package*.json index.js ./
+RUN npm install
+CMD ["node","index.js"]
+
+RUN echo This is the 0 > test0
+RUN echo This is the 1 > test1
+RUN echo This is the 2 > test2
+RUN echo This is the 3 > test3
+RUN echo This is the 4 > test4
+RUN echo This is the 5 > test5
+RUN echo This is the 6 > test6
+RUN echo This is the 7 > test7
+RUN echo This is the 8 > test8
+RUN echo This is the 9 > test9
+RUN echo This is the 0 > test10
+RUN echo This is the 1 > test11
+RUN echo This is the 2 > test12
+RUN echo This is the 3 > test13
+RUN echo This is the 4 > test14
+RUN echo This is the 5 > test15
+RUN echo This is the 6 > test16
+RUN echo This is the 7 > test17
+RUN echo This is the 8 > test18
+RUN echo This is the 9 > test19
+RUN echo This is the 0 > test20
+RUN echo This is the 1 > test21
+RUN echo This is the 2 > test22
+RUN echo This is the 3 > test23
+RUN echo This is the 4 > test24
+RUN echo This is the 5 > test25
+RUN echo This is the 6 > test26
+RUN echo This is the 7 > test27
+RUN echo This is the 8 > test28
+RUN echo This is the 9 > test29
+RUN echo This is the 0 > test30
+RUN echo This is the 1 > test31
+RUN echo This is the 2 > test32
+RUN echo This is the 3 > test33
+RUN echo This is the 4 > test34
+RUN echo This is the 5 > test35
+RUN echo This is the 6 > test36
+RUN echo This is the 7 > test37
+RUN echo This is the 8 > test38
+RUN echo This is the 9 > test39
+RUN echo This is the 0 > test40
+RUN echo This is the 1 > test41
+RUN echo This is the 2 > test42
+RUN echo This is the 3 > test43
+RUN echo This is the 4 > test44
+RUN echo This is the 5 > test45
+RUN echo This is the 6 > test46
+RUN echo This is the 7 > test47
+RUN echo This is the 8 > test48
+RUN echo This is the 9 > test49
+RUN echo This is the 0 > test50
+RUN echo This is the 1 > test51
+RUN echo This is the 2 > test52
+RUN echo This is the 3 > test53
+RUN echo This is the 4 > test54
+RUN echo This is the 5 > test55
+RUN echo This is the 6 > test56
+RUN echo This is the 7 > test57
+RUN echo This is the 8 > test58
+RUN echo This is the 9 > test59
