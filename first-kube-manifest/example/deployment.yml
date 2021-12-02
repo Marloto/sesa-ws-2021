@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: demo
+  labels:
+    app: demo
+    test2: b
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      labels:
+        app: demo
+        test1: a
+    spec:
+      containers:
+         - name: demo
+           image: marloto/simple-express-js
+           ports:
+             - containerPort: 3000
