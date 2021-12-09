@@ -106,7 +106,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- <classpathPrefix>lib</classpathPrefix> -->
-                            <mainClass>de.thi.inf.sesa.hexa.Application</mainClass>
+                            <mainClass>de.thi.inf.sesa.rest.Application</mainClass>
                         </manifest>
                         <manifestEntries>
                             <Class-Path>lib/</Class-Path>

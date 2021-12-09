@@ -32,7 +32,7 @@ services:
   db:
     image: mysql:5.7
     environment: # Konfigurationsmöglichkeiten im hub nachlesen
-      - MYSQL_DATEBASE=${MYSQL_DB}
+      - MYSQL_DATABASE=${MYSQL_DB}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}

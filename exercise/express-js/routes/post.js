@@ -1,5 +1,5 @@
 const express = require("express")
-const Post = require("../models/Post") // new
+const Post = require("../models/post") // new
 const router = express.Router()
 
 // Get all posts
