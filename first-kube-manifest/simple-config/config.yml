@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-config
+data:
+  greeting: 'Hello, Universe!'
+  greeting2: 'Hello, Universe!'
+  greeting3: 'Hello, Universe!'
+  greeting4: 'Hello, Universe!'
+  greeting5: 'Hello, Universe!'
