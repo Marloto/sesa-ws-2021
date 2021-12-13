@@ -3,13 +3,15 @@ kind: Ingress
 metadata:
     name: demo-ingress
 spec:
+    ingressClassName: nginx
     rules:
-      - http:
-            paths:
-              - path: /demo
-                pathType: Prefix
-                backend:
-                  service:
-                    name: demo
-                    port: 
-                      number: 9999
+      - host: localhost
+        http:
+          paths:
+            - backend:
+                service:
+                  name: demo
+                  port:
+                    number: 3000
+              path: /
+              pathType: Prefix

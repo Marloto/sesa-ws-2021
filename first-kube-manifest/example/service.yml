@@ -3,12 +3,10 @@ kind: Service
 
 metadata:
   name: demo
-  labels:
-    app: demo
 
 spec:
   ports:
-    - port: 9999
+    - port: 3000
       protocol: TCP
       targetPort: 3000
   selector:
